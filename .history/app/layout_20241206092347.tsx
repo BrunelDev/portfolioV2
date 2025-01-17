@@ -31,6 +31,7 @@ export default function RootLayout({
        
         
       >
+        <BackgroundBeams  />
         <div className="z-50">
         {children}
           

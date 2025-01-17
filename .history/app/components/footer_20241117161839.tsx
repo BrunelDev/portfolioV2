@@ -11,23 +11,20 @@ export function Footer() {
     }
   };
   return (
-    <div className="flex flex-col sm:flex-row px-4 sm:px-20 py-6 justify-between items-center bg-[#252525af] relative">
-      <h6 className="text-center sm:text-left mb-4 sm:mb-0">
-        Copyright @2024, Wilson Kinyua. All Rights Reserved
-      </h6>
+    <div className="flex px-20 py-6 justify-between items-center bg-[#252525af] relative">
+      <h6>Copyright @2024, Wilson Kinyua. All Rights Reserved</h6>
       <Link
         href={"#top"}
         onClick={(e) => {
           scrollToTop(e);
         }}
-        className="mb-4 sm:mb-0"
       >
-        <div className="bg-lime-600 rounded-lg w-[60px] h-[60px] flex justify-center items-center mx-auto sm:mx-0">
+        <div className="bg-lime-600 rounded-lg w-[60px] h-[60px] flex justify-center items-center absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
           <ChevronsUp size={40} />
         </div>
       </Link>
 
-      <ul className="flex flex-wrap justify-center sm:justify-start space-x-3">
+      <ul className="flex space-x-3">
         <li className="hover:text-lime-600 duration-300">
           <a href="#home">Home</a>
         </li>

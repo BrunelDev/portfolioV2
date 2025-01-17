@@ -10,12 +10,12 @@ import {
 import { Button } from "@/components/ui/button"
 export function Navbar() {
   return (
-    <div className="w-full px-4 sm:px-8 flex flex-col sm:flex-row justify-between items-center my-6 z-50" id="top">
-      <h6 className="text-center sm:text-left mb-4 sm:mb-0">
+    <div className="w-[90%] m-auto flex justify-between my-6 z-50" id="top">
+      <h6>
         <span className="text-lime-600">A</span>HOKPOSSI{" "}
         <span className="text-lime-600">B</span>runel
       </h6>
-      <ul className="flex flex-wrap justify-center sm:justify-start space-x-3 p-4 rounded-xl bg-gray-900">
+      <ul className="flex space-x-3 p-4 rounded-xl bg-gray-900">
         <li className="hover:text-lime-600 duration-300">
           <a href="#home">Home</a>
         </li>
@@ -38,7 +38,7 @@ export function Navbar() {
           <a href="#logout">Projects</a>
         </li>
       </ul>
-      <Button variant="gooeyLeft" className="bg-lime-600 rounded-md px-4 py-1 hover:bg-lime-900 hover:scale-105 duration-300 h-fit mt-4 sm:mt-0">
+      <Button variant="gooeyLeft" className=" bg-lime-600 rounded-md px-4 py-1 hover:bg-lime-900 hover:scale-105 duration-300 h-fit">
         Hire Me
       </Button>
     </div>

@@ -5,12 +5,12 @@ import { Navbar } from "@/app/components/navbar";
 import { ServiceComponent } from "@/app/components/serviceComponent";
 import { SkillCard } from "@/app/components/skillCard";
 import { WorkSection } from "@/app/components/workSection";
-import { Button } from "@/components/ui/button";
 import { CircleCheckBig, Globe, Send } from "lucide-react";
 import { useState } from "react";
+import { Button } from "@/components/ui/button"
 
 import Image from "next/image";
-export default function Home() {
+export default function page() {
   const [fullName, setUserFullName] = useState<string>("");
   const services = [
     {
@@ -304,7 +304,6 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5">
             <InputComponent
               placeholder="John Doe"
-              value={fullName}
               label="Full Name"
               handleChange={setUserFullName}
               height="h-[80px]"
@@ -312,7 +311,6 @@ export default function Home() {
             <InputComponent
               placeholder="John Doe"
               label="Full Name"
-              value={fullName}
               handleChange={setUserFullName}
               height="h-[80px]"
             />
@@ -321,14 +319,12 @@ export default function Home() {
             <InputComponent
               placeholder="John Doe"
               label="Full Name"
-              value={fullName}
               handleChange={setUserFullName}
               height="h-[80px]"
             />
             <InputComponent
               placeholder="John Doe"
               label="Full Name"
-              value={fullName}
               handleChange={setUserFullName}
               height="h-[80px]"
             />
@@ -337,16 +333,12 @@ export default function Home() {
             <InputComponent
               placeholder="John Doe"
               label="Full Name"
-              value={fullName}
               handleChange={setUserFullName}
               height="h-[150px]"
             />
           </div>
-          <Button
-            variant={"gooeyLeft"}
-            className="bg-lime-600 w-fit p-6 gap-2 mt-4"
-          >
-            Send Message <Send size={18} />
+          <Button variant={"gooeyLeft"} className="bg-lime-600 w-fit p-6 gap-2 mt-4">
+            Send Message <Send size={18}/>
           </Button>
         </div>
       </div>
